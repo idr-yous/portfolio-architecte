@@ -26,3 +26,16 @@ export async function authUser(body) {
   }
   throw new Error("Erreur serveur", { cause: res });
 }
+
+export async function deleteWork(id, TOKEN) {
+  const res = await fetch(`http://localhost:5678/api/works/${id}`, {
+    method: "DELETE",
+    headers: {
+      Authorization: `Bearer ${TOKEN}`,
+    },
+  });
+
+  if (!res.ok) {
+    throw new Error("Erreur serveur", { cause: res });
+  }
+}

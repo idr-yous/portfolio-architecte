@@ -103,6 +103,48 @@ export function createEditWorkButton() {
   return button;
 }
 
+/**
+ * @param {Object} categories
+ * @param {HTMLElement} modal
+ * @return {HTMLElement}
+ * */
+export function createModalFormGroup(modal, categories) {
+  const modalFormGroup = modal.querySelector(".modal-form-group");
+  const titleLabel = createElementWithText("label", "Titre", {
+    class: "form-label",
+    for: "title_field",
+  });
+  const titleInput = createElement("input", {
+    type: "text",
+    name: "title",
+    class: "modal-input form-input",
+    id: "title_field",
+    required: "",
+  });
+  const categoryLabel = createElementWithText("label", "Catégorie", {
+    class: "form-label",
+    for: "category_field",
+  });
+  const categorySelect = createElement("select", {
+    name: "category",
+    class: "modal-input form-select",
+    id: "category_field",
+    required: "",
+  });
+  categorySelect.append(
+    createElementWithText("option", "- Select Catégorie -", { value: "" })
+  );
+
+  categories.map((cat) => {
+    categorySelect.append(
+      createElementWithText("option", cat.name, { value: cat.id })
+    );
+  });
+
+  modalFormGroup.innerHTML = "";
+  modalFormGroup.append(titleLabel, titleInput, categoryLabel, categorySelect);
+}
+
 export function setLogin() {
   // Change the auth link in header to logout
   const authLink = document.querySelector("#auth-link");
