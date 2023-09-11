@@ -27,3 +27,40 @@ try {
   // If there is an fetching error we can show an error message
   setError("#portfolio", "Impossible de charger les Projets");
 }
+
+// Change active button for cuurent filter
+function changeActiveButton(button) {
+  filterButtons.forEach((btn) => btn.classList.remove("active"));
+  button.classList.add("active");
+}
+
+// Add show class
+function addShowClass(element) {
+  if (!element.classList.contains("show")) {
+    element.classList.add("show");
+  }
+}
+
+// Filter projects function
+const filterButtons = document.querySelectorAll(".filter-btn");
+filterButtons.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const category = btn.getAttribute("data-category-parent");
+    const projects = document.querySelectorAll(".work");
+
+    projects.forEach((project) => {
+      project.classList.remove("show");
+
+      if (category == "all") {
+        addShowClass(project);
+      } else {
+        if (project.dataset.categoryId === category) {
+          addShowClass(project);
+        }
+      }
+    });
+
+    // Change active button for cuurent filter
+    changeActiveButton(btn);
+  });
+});
