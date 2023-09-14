@@ -68,21 +68,23 @@ filterButtons.forEach((btn) => {
 
 // Modal fonction
 const editWorksBtn = document.querySelector("#edit_portfolio");
-editWorksBtn.addEventListener("click", async function () {
-    const modalElement = document.querySelector("#modal");
-    let modalProjects;
+if (editWorksBtn) {
+    editWorksBtn.addEventListener("click", async function () {
+        const modalElement = document.querySelector("#modal");
+        let modalProjects;
 
-    // We refetching projects list to chech if there an new projects
-    try {
-        modalProjects = await fetchJSON("http://localhost:5678/api/works");
+        // We refetching projects list to chech if there an new projects
+        try {
+            modalProjects = await fetchJSON("http://localhost:5678/api/works");
 
-        const modal = new Modal(modalElement, modalProjects);
-        modal.openModal();
-    } catch (e) {
-        // If there is an fetching error we can show an error message
-        setError(
-            ".portfolio-error",
-            "Erreur server, Impossible de modifier les Projets"
-        );
-    }
-});
+            const modal = new Modal(modalElement, modalProjects);
+            modal.openModal();
+        } catch (e) {
+            // If there is an fetching error we can show an error message
+            setError(
+                ".portfolio-error",
+                "Erreur server, Impossible de modifier les Projets"
+            );
+        }
+    });
+}
