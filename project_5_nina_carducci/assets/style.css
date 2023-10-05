@@ -1,3 +1,48 @@
+/* @font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(assets/fonts/inter-variablefont_slntwght-webfont.woff) format('woff'),
+		url(assets/fonts/inter-variablefont_slntwght-webfont.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Spectral';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(assets/fonts/spectral-regular-webfont.woff) format('woff'),
+		url(assets/fonts/spectral-regular-webfont.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Spectral';
+	font-style: italic;
+	font-weight: 300;
+	font-display: swap;
+	src: url(assets/fonts/spectral-lightitalic-webfont.woff) format('woff'),
+		url(assets/fonts/spectral-lightitalic-webfont.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Spectral';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url(assets/fonts/spectral-italic-webfont.woff) format('woff'),
+		url(assets/fonts/spectral-italic-webfont.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Spectral';
+	font-style: italic;
+	font-weight: 800;
+	font-display: swap;
+	src: url(assets/fonts/spectral-extrabolditalic-webfont.woff) format('woff'),
+		url(assets/fonts/spectral-extrabolditalic-webfont.woff2) format('woff2');
+} */
+
 body {
 	max-width: 1920px;
 	margin: auto;
@@ -170,14 +215,14 @@ body {
 }
 
 .quote__text {
-	font-family: Spectral;
+	font-family: 'Spectral';
 	font-size: 36px;
 	font-style: italic;
 	font-weight: 300;
 }
 
 .quote__author {
-	font-family: Spectral;
+	font-family: 'Spectral';
 	font-weight: 800;
 	font-size: 22px;
 }
