@@ -59,6 +59,7 @@ body {
 	top: 0;
 	z-index: 1000;
 	display: flex;
+	width: 100%;
 	justify-content: space-between;
 	padding-inline: 100px;
 	padding-block: 30px;
@@ -84,7 +85,7 @@ body {
 
 .nav a {
 	text-decoration: none;
-	color: #000
+	color: #000;
 }
 
 .social-link img {
@@ -127,6 +128,7 @@ body {
 }
 
 .site_title {
+	width: 100%;
 	margin-top: 1em;
 	font-size: 30px;
 }
@@ -150,10 +152,6 @@ body {
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
-
 .title {
 	text-align: center;
 	padding-block: 2em;
@@ -166,7 +164,7 @@ body {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #EE0011;
 	border-radius: 0;
 }
 

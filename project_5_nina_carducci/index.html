@@ -51,7 +51,7 @@
 	</noscript>
 
 	<!-- scripts -->
-	<script src="./assets/bootstrap/bootstrap.min.js" defer></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" async></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.min.js" defer></script>
@@ -247,12 +247,12 @@
 					<h3>Une question ? Une demande de devis ?</h3>
 					<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 					<form action="" method="post">
-						<label>Nom</label>
-						<input type="text" name="nom" id="nom">
-						<label>Email</label>
-						<input type="email" name="email" id="email">
-						<label>Message</label>
-						<textarea name="message" id="message" cols="30" rows="10"></textarea>
+						<label for="field_text">Nom</label>
+						<input id="field_text" type="text" name="nom" id="nom" autocomplete="off">
+						<label for="field_email">Email</label>
+						<input id="field_email" type="email" name="email" id="email" autocomplete="email">
+						<label for="field_message">Message</label>
+						<textarea id="field_message" name="message" id="message" cols="30" rows="10"></textarea>
 						<input type="submit" value="Envoyer" />
 					</form>
 				</div>
