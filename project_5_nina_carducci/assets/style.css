@@ -319,6 +319,16 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+.footer {
+	display: flex;
+	justify-content: space-between;
+	padding-inline: 100px;
+	padding-block: 30px;
+	background-color: #1C6474;
+	color: #fff;
+	text-align: center;
+}
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex: 2;
@@ -414,6 +424,11 @@ input[type="submit"] {
 		right: 0;
 		z-index: -1;
 	}
+
+	.footer {
+		padding-inline: 2em;
+		padding-block: 2em;
+	}
 }
 
 @media all and (max-width: 650px) {
@@ -452,7 +467,8 @@ input[type="submit"] {
 	}
 
 	#about,
-	#contact {
+	#contact,
+	.footer {
 		padding-inline: 1.5em;
 		padding-block: 1.5em;
 	}
@@ -463,5 +479,9 @@ input[type="submit"] {
 
 	.picture {
 		width: 80%;
+	}
+
+	footer {
+		flex-direction: column;
 	}
 }
