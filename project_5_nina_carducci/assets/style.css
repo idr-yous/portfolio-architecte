@@ -3,8 +3,8 @@
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-	src: url(assets/fonts/inter-variablefont_slntwght-webfont.woff) format('woff'),
-		url(assets/fonts/inter-variablefont_slntwght-webfont.woff2) format('woff2');
+	src: url(fonts/inter-variablefont_slntwght-webfont.woff) format('woff'),
+		url(fonts/inter-variablefont_slntwght-webfont.woff2) format('woff2');
 }
 
 @font-face {
@@ -12,8 +12,8 @@
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-	src: url(assets/fonts/spectral-regular-webfont.woff) format('woff'),
-		url(assets/fonts/spectral-regular-webfont.woff2) format('woff2');
+	src: url(fonts/spectral-regular-webfont.woff) format('woff'),
+		url(fonts/spectral-regular-webfont.woff2) format('woff2');
 }
 
 @font-face {
@@ -21,8 +21,8 @@
 	font-style: italic;
 	font-weight: 300;
 	font-display: swap;
-	src: url(assets/fonts/spectral-lightitalic-webfont.woff) format('woff'),
-		url(assets/fonts/spectral-lightitalic-webfont.woff2) format('woff2');
+	src: url(fonts/spectral-lightitalic-webfont.woff) format('woff'),
+		url(fonts/spectral-lightitalic-webfont.woff2) format('woff2');
 }
 
 @font-face {
@@ -30,8 +30,8 @@
 	font-style: italic;
 	font-weight: 400;
 	font-display: swap;
-	src: url(assets/fonts/spectral-italic-webfont.woff) format('woff'),
-		url(assets/fonts/spectral-italic-webfont.woff2) format('woff2');
+	src: url(fonts/spectral-italic-webfont.woff) format('woff'),
+		url(fonts/spectral-italic-webfont.woff2) format('woff2');
 }
 
 @font-face {
@@ -39,11 +39,12 @@
 	font-style: italic;
 	font-weight: 800;
 	font-display: swap;
-	src: url(assets/fonts/spectral-extrabolditalic-webfont.woff) format('woff'),
-		url(assets/fonts/spectral-extrabolditalic-webfont.woff2) format('woff2');
+	src: url(fonts/spectral-extrabolditalic-webfont.woff) format('woff'),
+		url(fonts/spectral-extrabolditalic-webfont.woff2) format('woff2');
 } */
 
 body {
+	width: 100%;
 	max-width: 1920px;
 	margin: auto;
 }
@@ -94,11 +95,12 @@ body {
 }
 
 #about {
+	position: relative;
 	display: flex;
-	background-color: #F6D2B8;
+	width: 100%;
 	padding-inline: 100px;
 	padding-block: 100px;
-	position: relative;
+	background-color: #F6D2B8;
 }
 
 .picture.left::before {
@@ -120,10 +122,11 @@ body {
 
 .picture img {
 	width: 100%;
-
+	height: auto;
 }
 
 #about-me {
+	width: 100%;
 	flex: 2
 }
 
@@ -169,7 +172,8 @@ body {
 }
 
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
 
 .item-column {
@@ -226,6 +230,7 @@ body {
 }
 
 #services {
+	width: 100%;
 	margin: auto;
 	background-color: #A8D5D8;
 	position: relative;
