@@ -1,5 +1,9 @@
 import "./Housing.scss";
 
 export default function Housing() {
-  return <h1>Housing page</h1>;
+  return (
+    <div className="container">
+      <h1>Housing page</h1>
+    </div>
+  );
 }
