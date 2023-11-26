@@ -1,12 +1,12 @@
-@import "../../assets/scss/variables";
-
 // Header style 
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding: 24px 0;
+    padding: 1.5rem 0;
+    background: $bg-color;
+    z-index: 99;
 
     .navbar {
         display: flex;
@@ -27,8 +27,8 @@
 
     .nav-link {
         text-decoration: none;
-        margin-left: 32px;
-        font-size: 24px;
+        margin-left: 2rem;
+        font-size: 1.5rem;
         color: $color-red;
     }
 
@@ -54,8 +54,8 @@
         }
 
         .nav-link {
-            font-size: 18px;
-            margin-left: 24px;
+            font-size: 1.125rem;
+            margin-left: 1.5rem;
         }
     }
 }
@@ -70,8 +70,8 @@
         }
 
         .nav-link {
-            font-size: 16px;
-            margin-left: 16px;
+            font-size: 1rem;
+            margin-left: 1rem;
         }
     }
 }
