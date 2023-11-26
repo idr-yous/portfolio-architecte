@@ -1,0 +1,169 @@
+@import '../../assets/scss/variables';
+
+// Housing style
+.housing-infos {
+    display: flex;
+    margin-top: 1.875rem;
+    margin-bottom: 1.625rem;
+
+    .infos-box {
+        width: 60%;
+    }
+
+    .title {
+        font-size: 2.25rem;
+        font-weight: 500;
+        color: $color-red;
+    }
+
+    .location {
+        margin-top: 0.6rem;
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: $color-red;
+    }
+
+    .rating-box {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
+        align-items: flex-end;
+        width: 40%;
+        margin-bottom: 0;
+    }
+
+    .host-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        order: 1;
+    }
+
+    .host-name {
+        display: flex;
+        align-items: center;
+        height: 4rem;
+        margin-right: 0.75rem;
+        font-size: 1.125rem;
+        color: $color-red;
+        text-align: end;
+    }
+
+    .host-picture {
+        width: 64px;
+        height: 64px;
+        border-radius: 100%;
+    }
+
+    .tag-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tag-wrapper .tag {
+        min-width: 115px;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        padding: 0.125rem 0.625rem;
+        background: $color-red;
+        border-radius: 10px;
+        font-size: 0.875rem;
+        line-height: 142.6%;
+        color: #ffffff;
+        text-align: center;
+    }
+}
+
+.housing-collaps {
+    display: flex;
+    justify-content: space-between;
+
+    .collapse {
+        &-section {
+            width: 47%;
+            padding: 0;
+        }
+
+        &-title {
+            font-size: 1.125rem;
+        }
+
+        &-icon {
+            margin-right: 0.75rem;
+        }
+
+        &-text {
+            padding: 1.875rem 1.25rem;
+            font-size: 1.125rem;
+        }
+    }
+}
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+    // Housing
+    .housing-infos {
+        display: block;
+
+        .infos-box {
+            width: 100%;
+        }
+
+        .title {
+            font-size: 1.125rem;
+        }
+
+        .location {
+            font-size: 0.875rem;
+        }
+
+        .rating-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: 1rem 0;
+        }
+
+        .rating-wrapper img {
+            width: 20px;
+            height: auto;
+        }
+
+        .host-wrapper {
+            margin-bottom: 0;
+        }
+
+        .host-name {
+            font-weight: 500;
+            font-size: 0.75rem;
+        }
+
+        .host-picture {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .housing-collaps {
+        display: block;
+
+        .collapse {
+
+            &-section {
+                width: 100%;
+            }
+
+            &-title {
+                font-size: 1rem;
+            }
+
+            &-text {
+                font-size: 0.875rem;
+            }
+        }
+    }
+}
