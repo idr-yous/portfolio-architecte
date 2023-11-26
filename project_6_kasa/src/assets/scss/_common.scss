@@ -1,0 +1,96 @@
+// Banner style
+.home-banner {
+    position: relative;
+    width: 100%;
+    height: 225px;
+
+    .title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        z-index: 1;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+        font-weight: 400;
+        color: white;
+    }
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+}
+
+// Card style
+.card {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &_image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &_image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    &_title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 0 0 10px 10px;
+    }
+
+    &_title h3 {
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: white;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+    // Banner style
+    .home-banner {
+        height: 150px;
+
+        .title {
+            justify-content: start;
+        }
+
+        .title h1 {
+            font-size: 1.5rem;
+        }
+
+        img {
+            border-radius: 12px;
+        }
+
+    }
+}
