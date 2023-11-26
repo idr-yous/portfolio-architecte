@@ -1,0 +1,20 @@
+.footer {
+    &-wrapper {
+        height: 200px;
+        //margin-top: 50px;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    &-logo {
+        height: 32px;
+        margin-top: 50px;
+    }
+
+    &-credit {
+        margin-top: 40px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}

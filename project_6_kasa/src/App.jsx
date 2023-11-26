@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
-import Header from "./components/header/Header";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Housing from "./pages/housing/Housing";
@@ -35,6 +36,7 @@ function Root() {
       <main className="main-content">
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 }
