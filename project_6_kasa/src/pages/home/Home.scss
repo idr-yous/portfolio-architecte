@@ -18,5 +18,9 @@
     .home-gallery {
         padding: 0;
         background: transparent;
+
+        .gallery_feed {
+            grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+        }
     }
 }
