@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { useScrollToTop } from "./hooks/use-scroll-to-top";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -36,6 +37,8 @@ const router = createBrowserRouter([
 ]);
 
 function Root() {
+  useScrollToTop();
+
   return (
     <>
       <Header />
